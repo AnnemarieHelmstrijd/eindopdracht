@@ -445,7 +445,7 @@ h2 {
 
     .section2 img {
         display: block;
-        margin-top: 10px; 
+        margin-top: 10px;
         padding: 0px;
         margin-bottom: 5px;
         width: 30%;
@@ -486,7 +486,7 @@ h2 {
         padding: 5px;
         width: 200px;
         height: 90%;
-    
+
     }
 
     .section2 iframe {
@@ -539,7 +539,7 @@ h2 {
     text-align: center;
     font-size: larger;
     color: #fff;
-font-weight: 400;
+    font-weight: 400;
 }
 
 .card2 {
@@ -560,8 +560,8 @@ font-weight: 400;
     text-align: center;
     font-size: larger;
     color: #fff;
-font-weight: 400;
-    
+    font-weight: 400;
+
 }
 
 
@@ -582,76 +582,105 @@ font-weight: 400;
     text-align: center;
     font-size: larger;
     color: #fff;
-font-weight: 400;
+    font-weight: 400;
 
 }
 
 @media (min-width: 768px) {}
 
 
-    @media (min-width: 1024px){}
-    /* -------------------------------------------ABOUT PAGE ----------------------------------- */
+@media (min-width: 1024px) {}
 
-    /* SECTION 9 ABOUT */
+/* -------------------------------------------ABOUT PAGE ----------------------------------- */
 
-    .section9 {
+/* SECTION 9 ABOUT */
 
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-        display: grid;
+.main-container-about {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    align-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.about {
+
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+    margin: 4px;
+    margin-bottom: 40px;
+    padding: 4px;
+    line-height: 1.8;
+    font-size: small;
+    text-align: justify;
+    ;
+}
+
+.pip {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    border-radius: 5%;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+
+.about h1 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 6px;
+    line-height: normal;
+    text-align: center;
+    margin: 20px;
+    font-size: 2em;
+}
+
+
+@media (min-width: 768px) {
+
+    .main-container-about {
         align-items: center;
-        justify-items: center;
-        background-repeat: repeat;
+        justify-content: space-between;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
-    .section9 h1 {
+    .pip {
+        grid-column-start: 3;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 2;
 
-        font-family: 'Roboto Flex', sans-serif;
-        font-weight: 6px;
-        line-height: normal;
-        text-align: left;
-        margin-bottom: 12px;
-        font-size: 2em;
-    }
-
-
-    .section9 article {
-
-        display: block;
-        font-size: medium;
-        font-weight: 200;
-        line-height: normal;
-        text-align: justify;
-        margin: auto;
-        padding: 30px;
-        width: 100%;
-        font-family: 'Roboto Flex', sans-serif;
-        width: 50%;
-    }
-
-
-    .section9 img {
-        display: block;
-        width: 50%;
-        height: 600px;
-        margin: 20px;
-        border-radius: 5%;
 
     }
 
-    @media (min-width: 768px) {
-        .section9 {
+    .about {
 
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+
+    }
 
 
+}
+
+@media (min-width: 1024px) {
+
+    .main-container-about {
+        align-items: center;
+        margin: 100px;
+    }
+
+    .pip {
+        margin-top: 40px;
     }
 
     /* -------------------------------------------SERVICES PAGE ----------------------------------- */
