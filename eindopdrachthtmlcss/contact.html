@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
+<header>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,93 +11,90 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto+Flex:opsz@8..144&display=swap"
         rel="stylesheet">
-</head>
+    </head>
 
-<body>
-    <div class="logo_container"> <a class="logotext" href="index.html">
-        PA</a>
-    <img class="logo" src="./IMG/dog-silhouette-logo.jpg">
-</div>
-<nav class="navbar">
-
-    <ul class="nav-links">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <div class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="services">
-                <a href="services.html">Services</a>
-                <ul class="dropdown">
-                    <li><a href="services.html#uitlaatservice"> Uitlaatservice </a></li>
-                    <li><a href="services.html#overnachten"> Overnachten</a></li>
-                    <li><a href="services.html#vakantieoppas"> Vakantieoppas</a></li>
-                </ul>
-            </li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </div>
-    </ul>
-</nav>
-
-</header>
-<head>
-
-    <section class="section8">
-        <main>
-            <h2>Contact</h2>
-            <p> Heeft u nog vragen? Vul dan het onderstaande formulier in en we komen zo snel mogelijk bij u terug! </p>
-            <div class="form">
-                <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
-
-                    <p><label for="name">NAAM <em>&#x2a;</em><input id="name" name="name" type="text" required
-                                autofocus></label></p>
-                    <p><label for="tn">NUMMER<em>&#x2a;</em><input id="tn" name="tn" type="tel" required
-                                maxlength="10"></label></p>
-                    <p><label for="email">EMAIL<em>&#x2a;</em><input id="email" name="email" type="email"
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
-                                title="Een emailadres moet een @ hebben"> </label></p>
-                    <p><label for="opm">STEL HIER UW VRAAG</label><textarea id="opm" class="tekstvak" name="opm"
-                            required row="6"></textarea></p>
-                    <p>
-                        <button class="button" onclick="myFunction()">versturen</button>
-                </form>
-                <iframe class="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.5446945398744!2d4.5126894!3d52.06981359999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5cf2f11e4ac0f%3A0xf851fd09347e4a59!2sVelddreef%20313%2C%202727%20CH%20Zoetermeer!5e0!3m2!1sen!2snl!4v1654109992440!5m2!1sen!2snl"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-
-    </section>
-    </main>
-
-    <footer class="footer">
-
-
+    <body>
         <div class="logo_container"> <a class="logotext" href="index.html">
                 PA</a>
             <img class="logo" src="./IMG/dog-silhouette-logo.jpg">
         </div>
+        <nav class="navbar">
 
-        <p class="footer-links">
-            <a href="index.html" class="link-1">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="contact.html">Contact</a>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="services">
+                        <a href="services.html">Services</a>
+                        <ul class="dropdown">
+                            <li><a href="services.html#uitlaatservice"> Uitlaatservice </a></li>
+                            <li><a href="services.html#overnachten"> Overnachten</a></li>
+                            <li><a href="services.html#vakantieoppas"> Vakantieoppas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+
+</header>
+
+<main class="main-container-contact">
+    <h2>Contact</h2>
+    <p> Heeft u nog vragen? Vul dan het onderstaande formulier in en we komen zo snel mogelijk bij u terug! </p>
+    <div class="form">
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+
+            <p><label for="name">NAAM <em>&#x2a;</em><input id="name" name="name" type="text" required
+                        autofocus></label></p>
+            <p><label for="tn">NUMMER<em>&#x2a;</em><input id="tn" name="tn" type="tel" required maxlength="10"></label>
+            </p>
+            <p><label for="email">EMAIL<em>&#x2a;</em><input id="email" name="email" type="email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
+                        title="Een emailadres moet een @ hebben"> </label></p>
+            <p><label for="opm">STEL HIER UW VRAAG</label><textarea id="opm" class="tekstvak" name="opm" required
+                    row="6"></textarea></p>
+            <p>
+                <button class="button" onclick="myFunction()">versturen</button>
+        </form>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.5446945398744!2d4.5126894!3d52.06981359999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5cf2f11e4ac0f%3A0xf851fd09347e4a59!2sVelddreef%20313%2C%202727%20CH%20Zoetermeer!5e0!3m2!1sen!2snl!4v1654109992440!5m2!1sen!2snl"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+</main>
+
+<footer class="footer">
+
+
+    <div class="logo_container"> <a class="logotext" href="index.html">
+            PA</a>
+        <img class="logo" src="./IMG/dog-silhouette-logo.jpg">
+    </div>
+
+    <p class="footer-links">
+        <a href="index.html" class="link-1">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+    </p>
+
+    <div class="footer-center">
+        <p>
+            <i class="email"></i>
+        <p><a href="mailto:pipsamigos@mail.com">pipsamigos@mail.com</a></p>
         </p>
 
-        <div class="footer-center">
-            <p>
-                <i class="email"></i>
-            <p><a href="mailto:pipsamigos@mail.com">pipsamigos@mail.com</a></p>
-            </p>
-
-        </div>
+    </div>
 
 
-    </footer>
+</footer>
 </body>
 
 </html>

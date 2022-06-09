@@ -838,13 +838,13 @@ th:hover {
 
 /* PRICING TABLE */
 
-.section5 {
+.main-container-price {
 
     display: flex;
     flex-direction: row;
 }
 
-.section5 h2 {
+.main-container-price h2 {
 
     text-align: right;
     color: #92999f;
@@ -900,7 +900,7 @@ th:hover {
 
 
 @media only screen and (max-width: 320px) {
-    .section5 {
+    .main-container-price {
 
         display: flex;
         flex-direction: column;
@@ -909,10 +909,11 @@ th:hover {
     .pricelist {
         width: 100%;
     }
+
+    .main-container-price h2 {
+        text-align: center;
+    }
 }
-
-
-
 
 
 
@@ -922,21 +923,23 @@ th:hover {
 
 /* SECTION 8 CONTACTFORM */
 
+.main-container-contact {
+    display: grid;
 
-.section8 {
+}
+
+.main-container-contact {
     background-image: url("./paws.jpg");
     background-color: white;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
+    width: 100%;
     align-items: center;
     justify-items: center;
     background-repeat: repeat;
 }
 
 
-.section8 h2 {
+.main-container-contact h2 {
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 6px;
     line-height: normal;
@@ -947,7 +950,7 @@ th:hover {
 
 }
 
-.section8 p {
+.main-container-contact p {
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 2px;
     margin: 10px;
@@ -959,6 +962,7 @@ th:hover {
 
 
 .form {
+    
     background: none;
     padding: 50px 100px;
     border-left: 10px solid rgb(184, 96, 37);
@@ -1025,7 +1029,6 @@ iframe {
     font-size: 18px;
     border-radius: 25px;
     margin-top: 15px;
-    float: right;
     transition: 5sc;
 
 }
