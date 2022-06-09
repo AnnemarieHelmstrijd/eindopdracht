@@ -12,6 +12,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (min-width: 1440px) {
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: rgba(248, 226, 208, 0.458);
+    }
+}
+
 .main-container {
 
     display: grid;
@@ -203,14 +211,6 @@ footer {
     padding: 55px 50px;
 }
 
-
-footer .footer-center {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-}
-
-
 /* Footer links */
 
 .footer .footer-links {
@@ -314,6 +314,7 @@ footer .footer-center p a {
     }
 
 }
+
 @media (min-width: 1024px) {
     .photoheader {
         height: 750px;
@@ -346,9 +347,9 @@ h2 {
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 6px;
     line-height: normal;
-    text-align: left;
+    text-align: center;
     margin-bottom: 12px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 
@@ -384,8 +385,8 @@ h2 {
 
     .section1 article {
         display: block;
-        margin: 30px;
-
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
 }
@@ -422,7 +423,7 @@ h2 {
     flex-wrap: nowrap;
     padding: 10px;
     width: 100%;
-    height: 30vh;
+    height: 45vh;
 }
 
 .section2 iframe {
@@ -430,7 +431,7 @@ h2 {
     flex-wrap: nowrap;
     padding: 10px;
     width: 100%;
-    height: 40vh;
+    height: 20vh;
 }
 
 /* MEDIA QUERIES PHOTOGALLERY */
@@ -459,14 +460,15 @@ h2 {
 
     .section2 iframe {
         display: block;
-        width: 45%;
+        width: 50%;
         margin-bottom: 5px;
         padding: 0;
+        height: 40vh;
     }
 
     .section2 video {
         display: block;
-        width: 45%;
+        width: 50%;
         /* height: 100%; */
         margin-bottom: 5px;
         padding: 0;
@@ -477,11 +479,16 @@ h2 {
 
 @media (min-width: 1024px) {
 
+    .section1 h1,
+    h2 {
+        text-align: left;
+    }
+
     .section2 {
         display: flex;
         flex-wrap: nowrap;
         margin-bottom: 40px;
-        align-items: flex-start;
+        align-items: center;
         justify-items: space-around;
         max-height: 210px;
     }
@@ -490,14 +497,14 @@ h2 {
         display: block;
         padding: 5px;
         width: 19%;
-        height: 90%;
-
+        height: 60%;
+        object-fit: fill;
     }
 
     .section2 iframe {
         display: block;
         width: 19%;
-        height: 20vh;
+        height: 21vh;
         padding: 5px;
 
     }
@@ -505,7 +512,7 @@ h2 {
     .section2 video {
         display: block;
         width: 19%;
-        height: 20vh;
+        height: 23vh;
         margin-bottom: 5px;
         padding: 5px;
 
@@ -595,8 +602,9 @@ h2 {
 
 
 @media (min-width: 1024px) {
-    .section3{
+    .section3 {
         display: flex;
+        justify-content: space-evenly;
     }
 
     .card {
@@ -604,11 +612,13 @@ h2 {
         flex-direction: column;
         align-items: center;
         max-height: 60%;
-        object-fit: cover;
     }
 
     .card img {
         margin: 25px;
+        height: 80%;
+        width: 90%;
+        object-fit: cover;
     }
 }
 
@@ -721,12 +731,12 @@ h2 {
         text-align: justify;
         background-image: url("./paws.jpg");
         background-color: white;
-        background-size: cover;
+        background-size: contain;
         width: 100vw;
         height: 100vh;
         align-items: center;
         justify-items: center;
-        background-repeat: repeat;
+        background-repeat: no-repeat;
     }
 }
 
@@ -823,16 +833,20 @@ th:hover {
     .main-container-services {
         display: grid;
         align-content: center;
+        justify-items: center;
     }
 
 
     table {
         margin-bottom: 20px;
         justify-self: center;
+        width: 80%;
     }
 
     .main-container-services article {
         justify-content: center;
+        align-items: center;
+        width: 80%;
     }
 
     .main-container-services h1 {
@@ -845,11 +859,8 @@ th:hover {
 
     .main-container-services {
         display: grid;
-        align-content: center;
-    }
-
-    .main-container-services article {
-        justify-content: center;
+        align-content: start;
+        width: 100%;
     }
 }
 
@@ -862,7 +873,12 @@ th:hover {
 .main-container-price {
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.pricelist-container{
+    display: flex;
+    margin-bottom: 200px;
 }
 
 .main-container-price h2 {
@@ -946,17 +962,17 @@ th:hover {
 
 .main-container-contact {
     display: grid;
-
+    align-items: center;
 }
 
 .main-container-contact {
     background-image: url("./paws.jpg");
     background-color: white;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     align-items: center;
     justify-items: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
 
@@ -983,11 +999,11 @@ th:hover {
 
 
 .form {
-    
+
     background: none;
-    padding: 50px 100px;
-    border-left: 10px solid rgb(184, 96, 37);
-    border-right: 10px solid rgb(184, 96, 37);
+    /* padding: 50px 100px; */
+    /* border-left: 10px solid rgb(184, 96, 37);
+    border-right: 10px solid rgb(184, 96, 37); */
     margin: 10px;
 }
 
@@ -1051,6 +1067,7 @@ iframe {
     border-radius: 25px;
     margin-top: 15px;
     transition: 5sc;
+    margin-left: 3em;
 
 }
 
