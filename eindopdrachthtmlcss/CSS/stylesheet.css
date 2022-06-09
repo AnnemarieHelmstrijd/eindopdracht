@@ -687,297 +687,319 @@ h2 {
 
     /* SERVICE OPMAAK */
 
-    .section6 {
+    .main-container-services {
 
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+    }
+
+
+    .main-container-services {
         text-align: justify;
         background-image: url("./paws.jpg");
         background-color: white;
         background-size: cover;
         width: 100vw;
         height: 100vh;
-        display: grid;
         align-items: center;
         justify-items: center;
         background-repeat: repeat;
     }
+}
 
-    .section6 h2 {
-        font-family: 'Roboto Flex', sans-serif;
-        font-weight: 6px;
-        line-height: normal;
+.main-container-services h2 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 6px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 2em;
+    padding: 5px;
+}
+
+.main-container-services h1 {
+    text-align: center;
+    color: #92999f;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.main-container-services p {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+/* SERVICES TABLE*/
+
+table {
+
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: span 3;
+
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+
+}
+
+
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+th {
+    background: rgb(184, 96, 37);
+    color: white;
+    border-collapse: collapse;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 18px;
+}
+
+
+table:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+td:hover,
+th:hover {
+
+    background-color: rgb(184, 96, 37);
+}
+
+
+
+@media (min-width: 768px) {
+
+    .main-container-services h1 {
         text-align: center;
-        margin-bottom: 12px;
-        font-size: 2em;
-        padding: 5px;
     }
+}
 
-    .section6 h1 {
-        text-align: right;
-        color: #92999f;
-        font-family: 'Roboto Flex', sans-serif;
-        font-weight: 400;
-        font-size: large;
-        text-transform: uppercase;
-        padding: 10px;
-        margin: 5px;
-    }
+/* -------------------------------------------PRICE PAGE ----------------------------------- */
 
 
-    .section6 p {
-        display: block;
-        padding: 10px;
-        margin: 10px;
+/* PRICING TABLE */
 
-    }
+.section5 {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.section5 h2 {
+
+    text-align: right;
+    color: #92999f;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.pricelist {
+    display: block;
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    display: block;
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.price .service {
+    background-color: rgb(184, 96, 37);
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.price li:hover {
+
+    background-color: rgb(184, 96, 37);
+}
 
 
-
-
-    /* SERVICES TABLE*/
-
-
-    table {
-        width: 50%;
-        border-collapse: collapse;
-        margin: auto;
-        background-color: white;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-
-    }
-
-
-    tr:nth-of-type(odd) {
-        background: #eee;
-    }
-
-    th {
-        background: rgb(184, 96, 37);
-        color: white;
-        border-collapse: collapse;
-        font-family: 'Roboto Flex', sans-serif;
-        font-size: medium;
-        text-transform: uppercase;
-    }
-
-    td,
-    th {
-        padding: 10px;
-        border: 1px solid #ccc;
-        text-align: left;
-        font-size: 18px;
-    }
-
-
-    table:hover {
-        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
-    }
-
-    td:hover,
-    th:hover {
-
-        background-color: rgb(184, 96, 37);
-    }
-
-    /* -------------------------------------------PRICE PAGE ----------------------------------- */
-
-
-    /* PRICING TABLE */
-
+@media only screen and (max-width: 320px) {
     .section5 {
 
         display: flex;
-        flex-direction: row;
-    }
-
-    .section5 h2 {
-
-        text-align: right;
-        color: #92999f;
-        font-family: 'Roboto Flex', sans-serif;
-        font-weight: 400;
-        font-size: large;
-        text-transform: uppercase;
-        padding: 10px;
-        margin: 5px;
-
+        flex-direction: column;
     }
 
     .pricelist {
-        display: block;
-        float: left;
-        width: 33.3%;
-        padding: 8px;
-    }
-
-    .price {
-        display: block;
-        list-style-type: none;
-        border: 1px solid #eee;
-        margin: 0;
-        padding: 0;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-    }
-
-    .price:hover {
-        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
-    }
-
-    .price .service {
-        background-color: rgb(184, 96, 37);
-        color: white;
-        font-size: 25px;
-    }
-
-    .price li {
-        border-bottom: 1px solid #eee;
-        padding: 20px;
-        text-align: center;
-        font-family: 'Roboto Flex', sans-serif;
-        font-size: medium;
-        text-transform: uppercase;
-    }
-
-    .price li:hover {
-
-        background-color: rgb(184, 96, 37);
-    }
-
-
-    @media only screen and (max-width: 320px) {
-        .section5 {
-
-            display: flex;
-            flex-direction: column;
-        }
-
-        .pricelist {
-            width: 100%;
-        }
-    }
-
-
-
-
-
-
-    /* -------------------------------------------CONTACT PAGE ----------------------------------- */
-
-
-
-    /* SECTION 8 CONTACTFORM */
-
-
-    .section8 {
-        background-image: url("./paws.jpg");
-        background-color: white;
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        background-repeat: repeat;
-    }
-
-
-    .section8 h2 {
-        font-family: 'Roboto Flex', sans-serif;
-        font-weight: 6px;
-        line-height: normal;
-        text-align: center;
-        margin-bottom: 12px;
-        font-size: 2em;
-        padding: 10px;
-
-    }
-
-    .section8 p {
-        font-family: 'Roboto Flex', sans-serif;
-        font-weight: 2px;
-        margin: 10px;
-        padding: 10px;
-        font-size: 1em;
-
-
-    }
-
-
-    .form {
-        background: none;
-        padding: 50px 100px;
-        border-left: 10px solid rgb(184, 96, 37);
-        border-right: 10px solid rgb(184, 96, 37);
-        margin: 10px;
-    }
-
-    input {
-        margin-bottom: 10px;
-    }
-
-    label,
-    input,
-    textarea {
-        display: block;
         width: 100%;
-        font-size: medium;
-        line-height: normal;
-        font-family: 'Montserrat', sans-serif;
     }
-
-    em {
-        font-weight: bold;
-        color: red;
-    }
-
-    input,
-    textarea {
-        border: none;
-        border: 1px solid rgba(0, 0, 0, .1);
-        border-radius: 2px;
-        background: white;
-        padding-left: 5px;
-        outline: none;
-    }
-
-    input:focus,
-    textarea:focus {
-        border: 1px solid rgb(184, 96, 37);
-    }
-
-    textarea {
-        resize: vertical;
-    }
-
-    iframe {
-        display: block;
-        margin: auto;
-        height: 29vh;
-        width: 29vh;
-        float: center;
+}
 
 
-    }
 
-    .button {
-        background-color: rgb(184, 96, 37);
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 18px;
-        border-radius: 25px;
-        margin-top: 15px;
-        float: right;
-        transition: 5sc;
 
-    }
 
-    .button:hover {
-        background-color: rgba(184, 96, 37, 0.568);
-    }
 
-    /*MEDIA QUEARIES FORM */
+/* -------------------------------------------CONTACT PAGE ----------------------------------- */
+
+
+
+/* SECTION 8 CONTACTFORM */
+
+
+.section8 {
+    background-image: url("./paws.jpg");
+    background-color: white;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-repeat: repeat;
+}
+
+
+.section8 h2 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 6px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 2em;
+    padding: 10px;
+
+}
+
+.section8 p {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 2px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+
+
+}
+
+
+.form {
+    background: none;
+    padding: 50px 100px;
+    border-left: 10px solid rgb(184, 96, 37);
+    border-right: 10px solid rgb(184, 96, 37);
+    margin: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+    font-size: medium;
+    line-height: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+em {
+    font-weight: bold;
+    color: red;
+}
+
+input,
+textarea {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    background: white;
+    padding-left: 5px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid rgb(184, 96, 37);
+}
+
+textarea {
+    resize: vertical;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    height: 29vh;
+    width: 29vh;
+    float: center;
+
+
+}
+
+.button {
+    background-color: rgb(184, 96, 37);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-top: 15px;
+    float: right;
+    transition: 5sc;
+
+}
+
+.button:hover {
+    background-color: rgba(184, 96, 37, 0.568);
+}
+
+/*MEDIA QUEARIES FORM */
