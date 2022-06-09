@@ -681,6 +681,7 @@ h2 {
 
     .pip {
         margin-top: 40px;
+
     }
 
     /* -------------------------------------------SERVICES PAGE ----------------------------------- */
@@ -691,7 +692,7 @@ h2 {
 
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     }
 
 
@@ -713,9 +714,10 @@ h2 {
     font-weight: 6px;
     line-height: normal;
     text-align: center;
-    margin-bottom: 12px;
+    margin: 12px;
     font-size: 2em;
     padding: 5px;
+
 }
 
 .main-container-services h1 {
@@ -729,11 +731,9 @@ h2 {
     margin: 5px;
 }
 
+.main-container-services article {
+    margin: 30px;
 
-.main-container-services p {
-    display: block;
-    padding: 10px;
-    margin: 10px;
 
 }
 
@@ -746,6 +746,8 @@ table {
     grid-column-end: span 2;
     grid-row-start: 3;
     grid-row-end: span 3;
+    justify-self: center;
+
 
 }
 
@@ -753,6 +755,7 @@ table {
     width: 50%;
     border-collapse: collapse;
     margin: auto;
+    margin-bottom: 10px;
     background-color: white;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -796,10 +799,39 @@ th:hover {
 
 @media (min-width: 768px) {
 
+    .main-container-services {
+        display: grid;
+        align-content: center;
+    }
+
+
+    table {
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+
+    .main-container-services article {
+        justify-content: center;
+    }
+
     .main-container-services h1 {
-        text-align: center;
+        text-align: right;
+
     }
 }
+
+@media (min-width: 1024px) {
+
+    .main-container-services {
+        display: grid;
+        align-content: center;
+    }
+
+    .main-container-services article {
+        justify-content: center;
+    }
+}
+
 
 /* -------------------------------------------PRICE PAGE ----------------------------------- */
 
