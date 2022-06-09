@@ -313,7 +313,11 @@ footer .footer-center p a {
         grid-column: auto;
     }
 
-
+}
+@media (min-width: 1024px) {
+    .photoheader {
+        height: 750px;
+    }
 }
 
 
@@ -463,7 +467,7 @@ h2 {
     .section2 video {
         display: block;
         width: 45%;
-        height: 100%;
+        /* height: 100%; */
         margin-bottom: 5px;
         padding: 0;
         height: 40vh;
@@ -479,19 +483,20 @@ h2 {
         margin-bottom: 40px;
         align-items: flex-start;
         justify-items: space-around;
+        max-height: 210px;
     }
 
     .section2 img {
         display: block;
         padding: 5px;
-        width: 200px;
+        width: 19%;
         height: 90%;
 
     }
 
     .section2 iframe {
         display: block;
-        width: 200px;
+        width: 19%;
         height: 20vh;
         padding: 5px;
 
@@ -499,7 +504,7 @@ h2 {
 
     .section2 video {
         display: block;
-        width: 200px;
+        width: 19%;
         height: 20vh;
         margin-bottom: 5px;
         padding: 5px;
@@ -523,7 +528,7 @@ h2 {
 }
 
 
-.card {
+.card1 {
     display: flex;
     width: 100%;
     margin: 5px;
@@ -532,7 +537,7 @@ h2 {
 
 }
 
-.card p {
+.card1 p {
     flex: 1;
     margin: 0px;
     padding: 8px;
@@ -589,7 +594,23 @@ h2 {
 @media (min-width: 768px) {}
 
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .section3{
+        display: flex;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 60%;
+        object-fit: cover;
+    }
+
+    .card img {
+        margin: 25px;
+    }
+}
 
 /* -------------------------------------------ABOUT PAGE ----------------------------------- */
 
