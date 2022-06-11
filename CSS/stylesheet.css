@@ -118,6 +118,10 @@ nav li {
     transition: 0.3s ease
 }
 
+#current-page {
+    color: black;
+}
+
 
 /* HAMBURGER MENU */
 
@@ -136,11 +140,10 @@ nav li {
     text-align: center;
     margin: 0;
     padding: 0;
-
 }
 
 .services:hover .dropdown {
-    display: block;
+    display: inline-block;
 }
 
 
@@ -175,12 +178,8 @@ nav input[type=checkbox] {
         transition: 0.3s ease;
     }
 
-    .menu a+a {
-        margin-top: 12px;
-    }
-
     input[type=checkbox]:checked~.menu {
-        display: block;
+        display: inline-block;
     }
 
     .hamburger {
@@ -189,7 +188,7 @@ nav input[type=checkbox] {
 
     .dropdown {
         left: 50%;
-        transform: translateX(35%);
+        /* transform: translateX(35%); */
     }
 
     .dropdown li:hover {
@@ -239,10 +238,6 @@ footer p :first-child:before {
 }
 
 /* -------------------------------------------INDEX PAGE ----------------------------------- */
-
-#current-page {
-    background-color: green;
-}
 
 .main-container {
 
@@ -747,7 +742,6 @@ th {
     color: white;
     border-collapse: collapse;
     font-family: 'Roboto Flex', sans-serif;
-    font-size: medium;
     text-transform: uppercase;
 
 }
@@ -757,7 +751,7 @@ th {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 
