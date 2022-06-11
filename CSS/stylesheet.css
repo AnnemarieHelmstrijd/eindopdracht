@@ -87,12 +87,20 @@ header nav {
     background-color: var(--bg-color);
 }
 
-nav a,
-nav li {
+nav a {
     text-decoration: none;
     color: #fff;
     list-style: none;
     padding: 10px;
+    display:block;
+}
+
+nav li {
+
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    display:block;
 }
 
 .menu {
@@ -100,13 +108,14 @@ nav li {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    border-radius: 8px;
 
 }
 
 .menu a:hover {
     background-color: rgb(184, 118, 74);
     border-radius: 5px;
-    transition: 0.3s ease;
+    transition: 0.3s ease
 }
 
 
@@ -118,26 +127,16 @@ nav li {
 
 .dropdown {
     background-color: var(--bg-color);
-    padding: 1em 0;
     position: absolute;
     display: none;
     border-radius: 8px;
-    top: 35px;
 }
 
-.dropdown a+a {
-    margin-top: 10px;
-}
-
-.dropdown a {
-    padding: 0.5em 1em;
-    width: 100%;
+.dropdown li {
     text-align: center;
+    margin: 0;
+    padding: 0;
 
-}
-
-.dropdown div:hover {
-    background-color: rgb(173, 109, 66);
 }
 
 .services:hover .dropdown {
@@ -153,6 +152,7 @@ nav input[type=checkbox] {
     display: none;
     font-size: 24px;
     user-select: none;
+    color: white;
 }
 
 /* MEDIA QUERIES NAVBAR */
@@ -189,7 +189,6 @@ nav input[type=checkbox] {
 
     .dropdown {
         left: 50%;
-        top: 30px;
         transform: translateX(35%);
     }
 
