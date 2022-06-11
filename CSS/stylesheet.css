@@ -92,7 +92,7 @@ nav a {
     color: #fff;
     list-style: none;
     padding: 10px;
-    display:block;
+    display: block;
 }
 
 nav li {
@@ -100,7 +100,7 @@ nav li {
     text-decoration: none;
     color: #fff;
     list-style: none;
-    display:block;
+    display: block;
 }
 
 .menu {
@@ -614,7 +614,7 @@ footer p :first-child:before {
     .main-container-about {
         align-items: center;
         justify-content: space-between;
-        margin-top: 100px 10px 10px 100px;
+        margin: 100px 10px 10px 100px;
 
     }
 
