@@ -240,6 +240,10 @@ footer p :first-child:before {
 
 /* -------------------------------------------INDEX PAGE ----------------------------------- */
 
+#current-page {
+    background-color: green;
+}
+
 .main-container {
 
     display: grid;
